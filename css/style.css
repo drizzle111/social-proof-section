@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-image: url("../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+body {
+  background-image: url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: bottom 100px right 20px;
+}
+
+.container {
+  padding: 1rem;
+  margin: 2rem 1rem;
+  display: grid;
+  place-items: center;
+}
+
+header h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #502050;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+header p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #937b92;
+}
+
+.star {
+  background-color: #f7f2f7;
+  padding: 0.75rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: auto;
+}
+.star img {
+  display: inline;
+}
+
+.box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #502050;
+  color: #f7f2f7;
+  border-radius: 0.65rem;
+}
+.box img {
+  border-radius: 50%;
+  width: 50px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+}
+.box h3 {
+  font-size: 1rem;
+}
+.box .inline,
+.box h3 {
+  display: inline-block;
+  margin-left: 0.75rem;
+}
+.box .inline {
+  display: block;
+  position: relative;
+  left: 55px;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: #f7f2f7;
+}
+
+@media (min-width: 991px) {
+  body {
+    background-image: url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    display: grid;
+    place-items: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 9.5rem;
+  }
+
+  .header_text h2 {
+    font-size: 2.25rem;
+  }
+  .header_text p {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .star {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+  }
+  .star p {
+    display: inline;
+  }
+
+  .star_1 {
+    position: relative;
+    left: 0;
+  }
+
+  .star_2 {
+    position: relative;
+    left: 20px;
+  }
+
+  .star_3 {
+    position: relative;
+    left: 50px;
+  }
+
+  .boxes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .boxes .box {
+    width: 300px;
+  }
+
+  .box_1 {
+    position: relative;
+    top: 0;
+  }
+
+  .box_2 {
+    position: relative;
+    top: 15px;
+  }
+
+  .box_3 {
+    position: relative;
+    top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
